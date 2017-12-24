@@ -41,15 +41,19 @@ QTabBar::tab:selected {
     background-color: #777777;
 }
 
-QHeaderView::section {
-    background-color: #444;
-    border-left: 3px solid #666;
-}
-
 QTableView {
     border: 1px solid #474747;
-    background-color: #2d2d2d;
-    
+    background-color: #2d2d2d;   
+}
+
+QHeaderView::section {
+    background-color: #444;
+    border: none;
+    border-left: 1px solid #666;
+    border-right: 1px solid #333;
+    padding-top: 3px;
+    padding-left: 4px;
+    min-height: 20px;
 }
 
 QTableCornerButton::section {
@@ -87,6 +91,7 @@ hexview_t {
 QScrollBar {
     background-color: #363636;
     width: 20px;
+    height: 20px;
     margin: 0 0 0 0;
 }
 
@@ -208,3 +213,13 @@ QTreeView::item:selected, QListView::item:selected, QTableView::item:selected {
     background-color: #474747;
     color: #ddd;
 }
+
+QToolTip, QTipLabel {
+    border: 1px solid #AA5500;
+    border-radius: 3px;
+    background: #111111;
+    color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
